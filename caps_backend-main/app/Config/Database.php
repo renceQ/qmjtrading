@@ -26,10 +26,10 @@ class Database extends Config
      */
     public array $default = [
         'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => 'root',
-        'password'     => '',
-        'database'     => 'itc',
+        'hostname'     => 'u127431254_eqmjApp',
+        'username'     => 'u127431254_eqmjApp',
+        'password'     => '3|DeH>TG2ev',
+        'database'     => 'u127431254_eqmjApp',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
