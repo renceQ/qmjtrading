@@ -6,7 +6,7 @@ import { loadFonts } from './plugins/webfontloader'
 import axios from 'axios'
 // import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 // import 'bootstrap'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.csss'
 
 
 
