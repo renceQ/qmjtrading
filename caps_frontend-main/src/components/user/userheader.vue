@@ -100,9 +100,9 @@
         
         
 
-				<span class="nav-item cta">
+				<!-- <span class="nav-item cta">
 				  <router-link  style="font-weight:500; font-size:13px;" to="/contacts" class="nav-link">Contact Us</router-link>
-				</span>	
+				</span>	 -->
 
 
 
