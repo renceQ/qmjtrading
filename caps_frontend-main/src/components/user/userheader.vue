@@ -35,7 +35,7 @@
           <a href="#">
             <i class="fas fa-shopping-bag"></i>
           </a>
-          <ul class="dropdown" style="margin-right: 200px; position:absolute; height:258px;">
+          <ul class="dropdown" style="margin-right: 50px; position:absolute; height:258px;">
             <h2></h2>
             <li style="width: 138px; margin-top:15px;"><a href="/toship_main">To Ship</a></li>
             <li style="width: 138px;"><a href="/torecieve_main">To Recieve</a></li>
@@ -101,7 +101,7 @@
         
 
 				<span class="nav-item cta">
-				  <router-link  style="font-weight:500;" to="/contacts" class="nav-link">Contact Us</router-link>
+				  <router-link  style="font-weight:500; font-size:13px;" to="/contacts" class="nav-link">Contact Us</router-link>
 				</span>	
 
 
