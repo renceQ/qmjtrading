@@ -4,13 +4,13 @@
 
 	<nav class="neumorphic-navbar" style="width:90%; background-color:rgb(245, 245, 245)" :class="{ 'navbar-hidden': isNavbarHidden }">
     <span class="nav-item">
-      <img style="width:80px; height:80px;"  v-if="info.length > 0" :src="require('../../../src/assets/img/qmj.png')" class="logo-picture-navbar">
-      <img style="width:80px; height:80px;"  v-if="info.length > 0" :src="require('../../../src/assets/img/qmj2.png')" class="logo-picture-navbar">
+      <img style="width:70px; height:70px;"  v-if="info.length > 0" :src="require('../../../src/assets/img/qmj.png')" class="logo-picture-navbar">
+      <img style="width:70px; height:70px;"  v-if="info.length > 0" :src="require('../../../src/assets/img/qmj2.png')" class="logo-picture-navbar">
     </span>
     <!-- <router-link to="/home" style=" font-weight: 400; font-family: 'Poppins', sans-serif; color:black;" >Qmj<span>Ent.</span></router-link> -->
 				<!--profile picture-->
 
-				<span style="margin-left:190px;" class="nav-item">
+				<span style="margin-left:20px;" class="nav-item">
 				  <router-link to="/home" style="font-weight:500; font-size:13px;" class="nav-link">Home</router-link>
 				</span>
 				<span class="nav-item">
@@ -35,7 +35,7 @@
           <a href="#">
             <i class="fas fa-shopping-bag"></i>
           </a>
-          <ul class="dropdown" style="margin-right: 50px; position:absolute; height:258px;">
+          <ul class="dropdown" style="position:absolute; height:270px;">
             <h2></h2>
             <li style="width: 138px; margin-top:15px;"><a href="/toship_main">To Ship</a></li>
             <li style="width: 138px;"><a href="/torecieve_main">To Recieve</a></li>
@@ -60,7 +60,7 @@
                   {{ filteredInfos.length }}
                 </div>
               </a>
-              <ul class="dropdown" :class="{ active: showAll }" style="position: absolute; margin-right: 100px; width:300px;">
+              <ul class="dropdown" :class="{ active: showAll }" style="position: absolute; margin-right: 5px; width:300px;">
                 <br>
                 <li><h4>Notifications</h4><aa  style="font-weight:500; font-size:13px;">mark all as read</aa></li>
                 <br>
@@ -100,16 +100,16 @@
         
         
 
-				<!-- <span class="nav-item cta">
+				<span class="nav-item cta">
 				  <router-link  style="font-weight:500; font-size:13px;" to="/contacts" class="nav-link">Contact Us</router-link>
-				</span>	 -->
+				</span>	
 
 
 
         
 				<nav class="navbar">
 					  <li class="menu-item" >
-						<a  style="font-weight:500;" href="#">Menu</a>
+						<a  style="font-weight:500; font-size:13px;" href="#">Menu</a>
 						<ul class="dropdown" style="margin-right: 200px; position:absolute;">
               <h2></h2>
 						  <!-- <li><a href="#">View Your Profile</a></li> -->
@@ -300,7 +300,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 15px;
+  
   border-radius: 5px;
  
   transition: top 0.3s;

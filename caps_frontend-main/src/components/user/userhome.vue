@@ -54,10 +54,7 @@
     
 
 		<div style="margin-left:180px;">
-			<br>
-			<br>
-			<br>
-			<br>
+			
 	
         <h1 class="text-center" style="   opacity: 0; /* Set initial opacity to 0 for fade-in effect */
         animation: fade-up .8s ease-out forwards;
@@ -65,7 +62,7 @@
 		
 			<h2 class="navbar-brand" href="index.html" style="  opacity: 0; /* Set initial opacity to 0 for fade-in effect */
 			animation: fade-up .8s ease-out forwards; font-family: 'Poppins', sans-serif;
-			animation-delay: 0.4s;margin-top:40px;font-size: 16px; ">
+			animation-delay: 0.4s;margin-top:30px;font-size: 16px; ">
 			<a></a>	Youre one stop destination for memorable experiences!
         <br>
 				<br><a style="font-size: 13px; text-align: justify;">
@@ -78,7 +75,7 @@
         
 			</h2>
 			<div>
-				<br>
+	
 				<br>
 				<router-link
   to="/about"

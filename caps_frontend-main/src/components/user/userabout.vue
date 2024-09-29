@@ -31,7 +31,7 @@ font-family: 'Poppins', sans-serif;
 font-size: 14px;
     font-weight:500;
     padding: 8px 30px;
-    margin-top:34%;
+    margin-top:38%;
     height:40px;
     left:14.5%;
     background-color:white ;
@@ -49,7 +49,7 @@ font-size: 14px;
   Read More
 </router-link>
 
-      <div style="display: flex; margin-top:140px; align-items: center; justify-content: flex-end;{ backgroundImage: 'url(' + require('../../../src/assets/img/line/png') + ')' }">
+      <div style="display: flex; margin-top:140px; align-items: center; justify-content: flex-end; { backgroundImage: 'url(' + require('../../../src/assets/img/line/png') + ')' }">
         <img 
           :src="require('../../assets/img/first.png')" 
           alt="Description of the image" 
@@ -115,7 +115,7 @@ font-size: 14px;
           />
         </div>
       
-        <div class="col-md-5" style="posotion:abosolute; margin-top:90px; margin-left:50px;">
+        <div class="col-md-5" style="position:abosolute; margin-top:90px; margin-left:50px;">
           <h1 class="navbar-brand" style="font-size: 30px;"> Challenges<span>...</span></h1>
           <h4 class="navbar-brand" style="font-size: 15px; text-align: justify;">
             It's important to note that businesses also use challenges as opportunities for growth and improvement. Qmj may develop strategies, innovate,  and adapt<br>
