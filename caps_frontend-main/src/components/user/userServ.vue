@@ -87,7 +87,7 @@ animation: fade-up 0.8s ease-out forwards;font-size: 35px; font-weight:900; left
             </div>
             <div class="col-md-6 pl-md-5 py-5">    
                 <div class="col-md-12 ">
-                  <h2 class="mb-4" style="margin-top:70px;">Sounds and Lights</h2>
+                  <h2 class="mb-4" style="margin-top:20px;">Sounds and Lights</h2>
               </div>
               <div class="row" style="width: 1100px; ">
                 <div class="col-md-6 ">
@@ -124,9 +124,9 @@ animation: fade-up 0.8s ease-out forwards;font-size: 35px; font-weight:900; left
       animation-delay: 0.5s;
           padding: 8px 30px;
         
-          top:32%;
+          top:31.5%;
           height:40px;
-          left:51.5%;
+          left:53.5%;
           font-size: 16px;
           background: linear-gradient(45deg, #180101, #740a0a, #fae6e6);
           border: none;

@@ -21,11 +21,11 @@
             <div class="neumorphic-search" style=" width:420px;height:50px;opacity: 0; /* Set initial opacity to 0 for fade-in effect */
     animation: fade-up .8s ease-out forwards;
     animation-delay: 0.2s; margin-top: -110px; margin-left:680px; position:absolute;box-shadow: 10px 10px 30px #eeecec, -1px -1px 10px #ffffff;">
-      <input v-model="searchText" @input="updateSearch" type="text" placeholder="Search for event..." class="search-input" style="margin-top:10px;border: 0px;"/>
+      <input v-model="searchText" @input="updateSearch" type="text" placeholder="Search for event..." class="search-input" style="margin-top:10px;border: 0px;font-weight:500;font-family: 'Poppins', sans-serif;"/>
       <button style="position:absolute; margin-left:422px; width:49px; height: 49px;margin-top:10px; " class="search-button">
         <i class="fas fa-search"></i>
       </button>
-      <a  @click="availability_dialog()" style="text-decoration: none; margin-top: 10px; position: absolute; margin-left: -200px; width: 170px; height: 49px; color: black;" class="search-button">
+      <a  @click="availability_dialog()" style="text-decoration: none; font-family: 'Poppins', sans-serif; font-size:13px;font-weight:400; margin-top: 10px; position: absolute; margin-left: -200px; width: 170px; height: 49px; color: black;" class="search-button">
         &nbsp;&nbsp;&nbsp;Check Availability <i style="margin-left: 7px; margin-top: 8px;" class="fas fa-calendar custom-icon"></i>
       </a>
       
@@ -190,7 +190,7 @@ Sound and stage lights production.</p>
   
 
 
- <v-dialog v-model="dialogs" max-width="800px" >
+ <v-dialog v-model="dialogs" max-width="900px" >
   <form @submit.prevent="saveBooking" class="container">
     <v-card style="height:700px;">
       <br>
@@ -357,7 +357,7 @@ Sound and stage lights production.</p>
 
 
 
-<v-dialog v-model="dialogss" max-width="780px"> 
+<v-dialog v-model="dialogss" max-width="810px"> 
   <form @submit.prevent="saveBooking" class="container">
     <v-card style="height:570px;">
       <br>
@@ -615,10 +615,10 @@ Sound and stage lights production.</p>
       style="
         position:absolute;
         background-color: rgb(50, 50, 51);
-        width: 155px;
+        width: 150px;
         height: 40px;
-        margin-left:520px;
-        margin-top: 135px;
+        margin-left:490px;
+        margin-top: 310px;
         border-radius:3px;
         color:white;
         
@@ -632,10 +632,10 @@ Sound and stage lights production.</p>
       style="
         position:absolute;
         background-color:none;
-        width: 48px;
+        width: 45px;
         height: 40px;
-        margin-left:686px;
-        margin-top: -352px;
+        margin-left:676px;
+        margin-top: -382px;
         border-radius:3px;
         color:rgb(49, 47, 47);
         font-size:17px;
@@ -652,15 +652,15 @@ Sound and stage lights production.</p>
       style="
         position:absolute;
         background-color: rgb(255, 255, 255);
-        width: 169px;
+        width: 170px;
         height: 40px;
-        margin-left: 340px;
-        margin-top: 120px;
+        margin-left: 310px;
+        margin-top: 300px;
         border-radius:3px;
       "
     > Show Added Items
     </a>
-    <div style="position:absolute; margin-top:121px; margin-left:180px;">
+    <div style="position:absolute; margin-top:231px; margin-left:150px;">
     <!-- <label for="start_date" style="position:absolute;">Select Day for Service Request:</label> -->
     <!-- <input type="date" class="neumorphic-button" style="font-size:13px; width:150px;background-color:white; border-radius:3px;" v-model="start_date" required> -->
     <input type="date" class="neumorphic-button" style="font-size:13px; width:150px;background-color:white; border-radius:3px;" v-model="startDate" required>
@@ -771,7 +771,7 @@ Sound and stage lights production.</p>
   </form>
 </v-dialog>
 
-<v-dialog v-model="avail" max-width="830px" style="border-radius:0px;position:absolute;">
+<v-dialog v-model="avail" max-width="900px" style="border-radius:0px;position:absolute;">
   <form @submit.prevent="save_request" class="container">
     <v-card style="height:650px; overflow: hidden;font-family: 'Poppins', sans-serif; font-weight: 600;font-size:11.5px;">
 
@@ -849,7 +849,7 @@ Sound and stage lights production.</p>
        <div>
        </div>
         <div style="position: absolute;margin-top:-80px; margin-left:100px;">
-          <button for="service" style="position:absolute; margin-top:-55px; font-family: 'Stok Web', sans-serif; font-size:160px; font-weight:400;margin-left:-12px; color:#FEAA01;" @click="availability_dialogs()"><i style="color:#FEAA01; font-size:20px;" class="fas fa-calendar custom-icon"></i></button>
+          <button for="service" style="position:absolute; margin-top:-80px; font-family: 'Stok Web', sans-serif; font-size:160px; font-weight:400;margin-left:-12px; color:#FEAA01;" @click="availability_dialogs()"><i style="color:#FEAA01; font-size:20px;" class="fas fa-calendar custom-icon"></i></button>
           <label for="service" style="margin-top:140px; font-size:35px; font-weight:600; margin-left:40px;color:#ffffff;"> {{ currentDay }}</label><br>
           <label for="service" style="position:absolute; margin-top:-30px; font-family: 'Stok Web', sans-serif; font-size:140px; font-weight:400;margin-left:50px; color:#ffffff;"> {{ currentDayNumber }}</label>
         
@@ -884,7 +884,7 @@ Sound and stage lights production.</p>
   </form>
 </v-dialog>
 
-<v-dialog v-model="day_event" max-width="650px" class="modern-dialog">
+<v-dialog v-model="day_event" max-width="730px" class="modern-dialog">
   <form @submit.prevent="save_event" class="container">
     <v-card class="event-card">
       <h2 class="dialog-title" style="font-family: 'Poppins', sans-serif; margin-left:34px;margin-top:30px; ">{{ formatDate(clickedDate) }}<a style="font-size:15px; font-weight:400; color:#FEAA01;">&nbsp;&nbsp;&nbsp;Event Schedules</a> </h2>
@@ -948,10 +948,10 @@ Sound and stage lights production.</p>
 
 
 
-<v-dialog v-model="dialogservice" max-width="780px">
+<v-dialog v-model="dialogservice" max-width="850px">
 
   <form @submit.prevent="saveBooking" class="container">
-    <v-card style="height:570px;">
+    <v-card style="height:590px;">
       <br>
       <v-card-title class="headline " style="font-size: 19px; font-weight:600;margin-left:36px;font-family: 'Poppins', sans-serif;  color:rgb(0, 153, 255); ">SERVICE INFROMATION<span style="font-size: 22px;  font-weight:100;">&nbsp;&nbsp;&nbsp;</span><span style="font-weight:400; font-family: 'WindSong', cursive; font-size:33px;"></span></v-card-title>
       <v-card-text>

@@ -10,7 +10,7 @@
         <label for="category_id" style=" opacity: 0; /* Set initial opacity to 0 for fade-in effect */
         animation: fade-up 0.8s ease-out forwards; font-weight:600;margin-left:-50px;font-family: 'Poppins', sans-serif;color:#000000;" class="label text-center">SEARCH FILTER</label><br>
         <div class="select-wrapper" style="margin-left:36%;" >
-          <select v-model="category_id" @change="filterProducts" class="neumorphic-button" style="opacity: 0; animation: fade-up .8s ease-out forwards; animation-delay: 0.2s; width: 140px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border: none; border-radius: 3px; outline: none;">
+          <select v-model="category_id" @change="filterProducts" class="neumorphic-button" style="font-size:14px;font-weight:400;opacity: 0; animation: fade-up .8s ease-out forwards; animation-delay: 0.2s; width: 140px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); border: none; border-radius: 3px; outline: none;">
             <option class="option" value="">All Categories</option>
             <option v-for="category in categories" :key="category.id" :value="category.id">
               {{ category.category_name }}
@@ -28,7 +28,7 @@
     <div class="neumorphic-search" style=" height:50px;opacity: 0; /* Set initial opacity to 0 for fade-in effect */
     animation: fade-up .8s ease-out forwards;
     animation-delay: 0.2s; margin-top: -5px; margin-left:100px; position:absolute;box-shadow: 10px 10px 30px #eeecec, -1px -1px 10px #ffffff;">
-      <input v-model="searchText" @input="updateSearch" type="text" placeholder="Search Product by name..." class="search-input" style="margin-top:10px;border: 0px;"/>
+      <input v-model="searchText" @input="updateSearch" type="text" placeholder="Search Product by name..." class="search-input" style="font-weight:400;margin-top:10px;border: 0px;"/>
       <button style="position:absolute; margin-left:602px; width:49px; height: 49px;margin-top:10px; " class="search-button">
         <i class="fas fa-search"></i>
       </button>
@@ -69,10 +69,15 @@
             <h4 style=" opacity: 0; /* Set initial opacity to 0 for fade-in effect */
             animation: fade-up .8s ease-out forwards;
             animation-delay: 0.2s;text-align: left;margin-left:26px;font-size:14.5px; margin-top:-2%; font-weight:500; color:#1b1b1b; font-family: 'Roboto', sans-serif;">{{ product.prod_name }}</h4>
+
             <h4 style="display: none;">{{ product.category_id }}</h4>
+
+             <button class="neumorphic" style="font-weight:400;opacity: 0; /* Set initial opacity to 0 for fade-in effect */
+            animation: fade-up .8s ease-out forwards;
+            animation-delay: 0.4s; background-color:none;  height:43px; position:absolute; margin-top:-50px;margin-left:50px;" @click="preOrder(product)"><span style="font-size: 18px; position:absolute; "><i style="height:100px;" class="fas fa-shopping-bag"></i></span></button>
             <p style="font-weight:400;opacity: 0; /* Set initial opacity to 0 for fade-in effect */
             animation: fade-up .8s ease-out forwards;
-            animation-delay: 0.2s; text-align:left; margin-left:26px; font-family: 'Poppins';font-size:13px;margin-top:20px;color:#575757;">Size: {{ getSizeName(product.size_id) }}</p>
+            animation-delay: 0.2s; text-align:left; margin-left:26px; font-family: 'Poppins';font-size:13px;color:#575757;">Size: {{ getSizeName(product.size_id) }}</p>
   
             <p style="font-weight: 400; opacity: 0; animation: fade-up .8s ease-out forwards;font-weight:500; animation-delay: 0.2s; text-align: left; margin-left: 26px; font-family: 'Poppins'; font-size: 13px; margin-top: -19px;color: #3686ff;">
               Sold: {{ getTotalQuantitySold(product.id) }}
@@ -82,9 +87,7 @@
             </p>
             
               
-            <button class="neumorphic" style="font-weight:400;opacity: 0; /* Set initial opacity to 0 for fade-in effect */
-            animation: fade-up .8s ease-out forwards;
-            animation-delay: 0.4s; background-color:none;  height:43px; position:absolute; margin-top:-62px;margin-left:50px;" @click="preOrder(product)"><span style="font-size: 18px; position:absolute; "><i style="height:100px;" class="fas fa-shopping-bag"></i></span></button>
+           
           </div>
         </div>
       </div>
